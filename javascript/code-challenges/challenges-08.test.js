@@ -58,15 +58,15 @@ let characters = [
 const sortByChildren = (charArray) => {
   charArray.sort((a, b) => {
     if (Number(a.children.length) > Number(b.children.length)) {
-      return -1;
-    } else if (Number(a.children.length) < Number(b.children.length)) {
       return 1;
+    } else if (Number(a.children.length) < Number(b.children.length)) {
+      return -1;
     } else {
       if (a.house > b.house) {
-        return -1;
+        return 1;
       }
       else {
-        return 1;
+        return -1;
       }
     }
   });
@@ -77,12 +77,12 @@ const sortByChildren = (charArray) => {
 CHALLENGE 2
 
 Write a function named containsW that takes in a string. This function should use a regular expression
-pattern to return true if the string contains the letter 'w' in lower case or false if it does not. 
+pattern to return true if the string contains the letter 'w' in lower case or false if it does not.
 
 ------------------------------------------------------------------------------------------------ */
 
 const containsW = (str) => {
-  return (str.includes('W') || str.includes('w')) ? true : false;
+  return str.includes('w') ? true : false;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -100,18 +100,14 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  if (typeof (input) === 'number') {
+  if(typeof(input) === 'number') {
     return true;
-  } else {
-    let inArray = input.split('');
-    let checkingArray = inArray.map(char => {
-      return !isNaN(char);
+  }
+  else {
+    let arr = input.split('').map(item => {
+      return !isNaN(item) && (item !== ' ');
     });
-    if (checkingArray.includes(true)) {
-      return true;
-    } else {
-      return false;
-    }
+    return arr.includes(true);
   }
 };
 
@@ -140,7 +136,8 @@ Return an array containing all the matches.
 const isCapitalized = (str) => {
   let strArray = str.split(' ');
   let result = [];
-  strArray.map (word => {
+  strArray.map (word1 => {
+    let word = word1.replace(/[^\w\s]/gi, '');
     if (word !== word.toLowerCase()) {
       result.push(word);
     }
@@ -257,8 +254,8 @@ describe('Testing challenge 2', () => {
   });
   test('It should return false if the input does not contain a w', () => {
     expect(containsW('hello everyone')).toBe(false);
-  })
-})
+  });
+});
 
 describe('Testing challenge 3', () => {
   test('It should return true if the input is a number', () => {
@@ -284,7 +281,7 @@ describe('Testing challenge 4', () => {
   test('It should return false if the input does not contain the word school', () => {
     expect(containsWorld('hello everyone')).toBe(false);
   });
-})
+});
 
 describe('Testing challenge 5', () => {
   test('It should only return words that begin with a capital letter', () => {
