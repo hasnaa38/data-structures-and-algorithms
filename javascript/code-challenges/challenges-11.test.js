@@ -78,16 +78,16 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  let outerArr = [];
-  input.map(arr => {
-    let innerArr = [];
-    outerArr.push(arr.forEach(value => {
-      if ((typeof(value) === 'number') && (value%5===0)) {
-        innerArr.push(Math.pow(2, value));
-      }
-    }));
+  let stage1 = input.map(arr => {
+    return arr.filter(item => {
+      return typeof(item) === 'number' && item%5 === 0;
+    });
   });
-  return outerArr;
+  return stage1.map(arr => {
+    return arr.map(item => {
+      return Math.pow(2,item);
+    })
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -153,17 +153,33 @@ let starWarsData = [{
 }];
 
 let findMaleAndFemale = (data) => {
-  // Solution code here...
+  let arr = [];
+  data.map(obj => {
+    if(obj.gender==='female' || obj.gender==='male') {
+      arr.push(obj.name);
+    }
+  });
+  return arr.join(' and ');
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the character who is the shortest in height.
+Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and
+reduce to return the name of the character who is the shortest in height.
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let shortest = data.reduce((acc, char) => {
+    return Number(char.height) < acc ? Number(char.height) : acc;
+  }, 500);
+  console.log(shortest);
+  return data.reduce((acc, obj) => {
+    if (Number(obj.height) === shortest) {
+      acc = obj.name;
+    }
+    return acc;
+  }, '');
 };
 
 /* ------------------------------------------------------------------------------------------------
