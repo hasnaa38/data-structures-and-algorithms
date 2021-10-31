@@ -4,6 +4,13 @@ Part of growing as a programmer is to practice, practice, practice. Throughout t
 
 The daily challenges will be posted by the instructor at the end of lecture every day. Plan to focus on this task with your partner every day after class until 6 p.m., completing as much as possible during this time, then complete the remainder of the challenges on your own, as needed.
 
+## 401 Code Challenges Table 
+
+| Topic | Readme File |
+|---|---|
+| 01 -Array Reverse | [array-reverse](./array-reverse/README.md) |
+
+
 ## Challenge Execution and Testing
 
 At the end of lecture each day, a new challenge will be published in Canvas. Copy the contents of the file into **this folder** in the `data-structures-and-algorithms` repository and work on the individual problems for the day. It's a good practice to add and commit regularly as you finish each problem in the day's challenge. When you are finished, push your branch to GitHub to create a PR.
@@ -25,3 +32,4 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
