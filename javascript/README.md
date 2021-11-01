@@ -7,6 +7,7 @@
 | Topic | Readme File |
 |---|---|
 | 01 -Array Reverse | [array-reverse](./code-challenges/array-reverse/README.md) |
+| 02 -Array Insert Shift] | [array-insert-shift](./code-challenges/array-insert-shift/README.md) |
 
 ### Folder and Challenge Setup
 
