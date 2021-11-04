@@ -11,6 +11,7 @@ The daily challenges will be posted by the instructor at the end of lecture ever
 | 01 - Array Reverse | [array-reverse](./array-reverse/README.md) |
 | 02 - Array Insert Shift] | [array-insert-shift](./array-insert-shift/README.md) |
 | 03 - Binary Search of Sorted Array] | [array-binary-search](./array-binary-search/README.md) |
+| 05 - Linked Lists] | [singly-linked-lists](./singly-linked-lists/README.md) |
 
 ## Challenge Execution and Testing
 
