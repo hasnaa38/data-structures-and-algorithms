@@ -58,7 +58,7 @@ class LinkedList {
       finalString = finalString + `{ ${currentNode.value } } -> `;
       currentNode = currentNode.next;
     }
-    return finalString + 'NULL';
+    return finalString + `{ ${currentNode.value } } -> NULL`;
   }
 }
 

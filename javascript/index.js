@@ -1,5 +1,5 @@
 'use strict';
 
-let doWork = require('./code-challenges/singly-linked-lists/index');
+let doWork2 = require('./linked-list/linked-list-insertions/index');
 
-doWork();
+doWork2();

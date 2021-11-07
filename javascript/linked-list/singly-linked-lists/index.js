@@ -2,7 +2,7 @@
 
 const LinkedList = require('./lib/LinkedList');
 
-function doWork() {
+function doWork1() {
 // Creating a new empty LL:
   const linkedList = new LinkedList();
 
@@ -21,5 +21,5 @@ function doWork() {
   console.log(linkedList2.toString()); // empty list
 }
 
-module.exports = doWork;
+module.exports = doWork1;
 
