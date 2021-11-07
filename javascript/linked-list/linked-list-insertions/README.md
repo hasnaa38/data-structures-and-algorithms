@@ -10,6 +10,13 @@ For this linked list challenge, 3 methods were added:
 3. `insertAfter(value, newValue)` - add a new node after an existing one.
 4. `toString()` - to print the results of the linked list
 
+## Links
+
+* Node class .js link: https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/linked-list/linked-list-insertions/lib/Node.js
+* LinkedList js link: https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/linked-list/linked-list-insertions/lib/LinkedList.js
+* index.js link: https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/linked-list/linked-list-insertions/index.js
+* test link: https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/linked-list/linked-list-insertions/__tests__/insertions.test.js
+
 ## Whiteboard Process
 
 * `append(value)` Whiteboard Process
