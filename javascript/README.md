@@ -11,6 +11,7 @@
 | 03 - Binary Search of Sorted Array] | [array-binary-search](./code-challenges/array-binary-search/README.md) |
 | 05 - Linked Lists | [singly-linked-lists](./linked-list/singly-linked-lists/README.md) |
 | 06 - Linked List Insertions | [linked-list-insertions](./linked-list/linked-list-insertions/README.md) |
+| 07 - Linked List Kth | [linked-list-kth](./linked-list/linked-list-kth/README.md) |
 
 ### Folder and Challenge Setup
 
