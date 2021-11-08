@@ -7,9 +7,13 @@ For this linked list challenge, only one new methods was added:
 
 `kthFromEnd(k)` - finds the value of the k'th node from the tail.
 
+## Link
+
+PR: https://github.com/hasnaa38/data-structures-and-algorithms/pull/23
+
 ## Solution
 
-![ch07 board](./ch07-board.PNG)
+![ch07 board](./ch07-board.png)
 
 The solution is based upon adding a new property to the node called index
 Indices starts from 1 to length+1
