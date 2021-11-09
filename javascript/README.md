@@ -9,9 +9,10 @@
 | 01 -Array Reverse | [array-reverse](./code-challenges/array-reverse/README.md) |
 | 02 -Array Insert Shift] | [array-insert-shift](./code-challenges/array-insert-shift/README.md) |
 | 03 - Binary Search of Sorted Array] | [array-binary-search](./code-challenges/array-binary-search/README.md) |
-| 05 - Linked Lists | [singly-linked-lists](./linked-list/singly-linked-lists/README.md) |
-| 06 - Linked List Insertions | [linked-list-insertions](./linked-list/linked-list-insertions/README.md) |
+| 05 - Linked Lists | [singly-linked-lists](./linked-list/readme/ch05.md) |
+| 06 - Linked List Insertions | [linked-list-insertions](./linked-list/readme/ch06.md) |
 | 07 - Linked List Kth | [linked-list-kth](./linked-list/linked-list-kth/README.md) |
+| ch 08 - Linked List Zip | [linked-list-zip](./linked-list/readme/ch08.md) |
 
 ### Folder and Challenge Setup
 

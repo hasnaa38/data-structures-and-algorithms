@@ -1,5 +1,5 @@
 'use strict';
 
-let doWork3 = require('./linked-list/linked-list-kth/index');
+let doWork = require('./linked-list/index');
 
-doWork3();
+doWork();
