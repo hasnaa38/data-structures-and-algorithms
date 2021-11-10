@@ -34,6 +34,6 @@ describe('Linked list lib tetsing', () => {
     expect(testingList.includes(8)).toBe(false);
   });
   it('7. Can properly return a collection of all the values that exist in the linked list', () => {
-    expect(testingList.toString()).toBe('{ 1 } -> { 2 } -> { 3 } -> NULL');
+    expect(testingList.toString()).toBe('head -> { 1 } -> { 2 } -> { 3 } -> NULL');
   });
 });

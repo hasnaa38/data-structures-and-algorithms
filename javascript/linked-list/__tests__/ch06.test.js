@@ -19,18 +19,18 @@ describe('Linked list lib tetsing', () => {
   });
   it('3. Can successfully insert a node before a node located i the middle of a linked list', () => {
     testingList.insertBefore(3, 8);
-    expect(testingList.toString()).toBe('{ 1 } -> { 2 } -> { 8 } -> { 3 } -> { 4 } -> NULL');
+    expect(testingList.toString()).toBe('head -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 4 } -> NULL');
   });
   it('4. Can successfully insert a node before the first node of a linked list', () => {
     testingList.insertBefore(1, 8);
-    expect(testingList.toString()).toBe('{ 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 4 } -> NULL');
+    expect(testingList.toString()).toBe('head -> { 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 4 } -> NULL');
   });
   it('5. Can successfully insert after a node in the middle of the linked list', () => {
     testingList.insertAfter(3, 8);
-    expect(testingList.toString()).toBe('{ 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 8 } -> { 4 } -> NULL');
+    expect(testingList.toString()).toBe('head -> { 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 8 } -> { 4 } -> NULL');
   });
   it('6. Can successfully insert a node after the last node of the linked list', () => {
     testingList.insertAfter(4, 8);
-    expect(testingList.toString()).toBe('{ 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 8 } -> { 4 } -> { 8 } -> NULL');
+    expect(testingList.toString()).toBe('head -> { 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 8 } -> { 4 } -> { 8 } -> NULL');
   });
 });

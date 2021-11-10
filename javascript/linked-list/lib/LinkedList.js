@@ -6,6 +6,7 @@ class LinkedList {
   constructor(){
     this.head = null;
     this.tail = null;
+    this.previous = null;
     this.length = 0;
   }
 
@@ -36,6 +37,7 @@ class LinkedList {
       this.length++;
       return this;
     } else {
+      newNode.previous = this.tail;
       this.tail.next = newNode; // the current tail is pointing to the new node
       this.tail = newNode; // making the new node become the new tail
     }
@@ -102,7 +104,7 @@ class LinkedList {
     if (!this.head){
       return 'empty list';
     }
-    let finalString = '';
+    let finalString = 'head -> ';
     let currentNode = this.head;
     while(currentNode.next){
       finalString = finalString + `{ ${currentNode.value } } -> `;
@@ -149,6 +151,23 @@ class LinkedList {
       }
     }
     return finalRes + 'NULL';
+  }
+
+  isPalindrome(){
+    if(!this.length){
+      return 'empty list!';
+    }
+    let middle = Math.floor(this.length/2);
+    let currentForward = this.head;
+    let currentBackward = this.tail;
+    for(let i=0; i<middle; i++){
+      if(currentForward.value !== currentBackward.value){
+        return false;
+      }
+      currentForward = currentForward.next;
+      currentBackward = currentBackward.previous;
+    }
+    return true;
   }
 }
 
