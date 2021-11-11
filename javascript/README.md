@@ -13,6 +13,7 @@
 | 06 - Linked List Insertions | [linked-list-insertions](./linked-list/readme/ch06.md) |
 | 07 - Linked List Kth | [linked-list-kth](./linked-list/linked-list-kth/README.md) |
 | ch 08 - Linked List Zip | [linked-list-zip](./linked-list/readme/ch08.md) |
+| ch 10 - Stack and Queue | [stack-and-queue](./stacks-and-queues/readme/ch10.md) |
 
 ### Folder and Challenge Setup
 

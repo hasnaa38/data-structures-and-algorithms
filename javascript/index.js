@@ -1,5 +1,5 @@
 'use strict';
 
-let doWork = require('./linked-list/index');
+let doWork = require('./stacks-and-queues/index');
 
 doWork();
