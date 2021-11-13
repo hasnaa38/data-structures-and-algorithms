@@ -45,6 +45,9 @@ class LinkedList {
   }
 
   insertBefore(value, newValue){
+    if(this.length < value){
+      return 'No change, method exception';
+    }
     const newNode = new Node(newValue);
     let currentNode = this.head;
     if(this.head.value === value){
@@ -61,10 +64,12 @@ class LinkedList {
         currentNode = currentNode.next;
       }
     }
-    return 'No change, method exception';
   }
 
   insertAfter(value, newValue){
+    if(this.length < value){
+      return 'No change, method exception';
+    }
     const newNode = new Node(newValue);
     let currentNode = this.head;
     let appendingAfterFun = () => {
@@ -81,7 +86,6 @@ class LinkedList {
     if(currentNode.value === value){ // the last node
       appendingAfterFun();
     }
-    return 'No change, method exception';
   }
 
   // To find if a value exists or not in a linked list

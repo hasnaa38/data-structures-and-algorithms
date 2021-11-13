@@ -33,4 +33,10 @@ describe('Linked list lib tetsing', () => {
     testingList.insertAfter(4, 8);
     expect(testingList.toString()).toBe('head -> { 8 } -> { 1 } -> { 2 } -> { 8 } -> { 3 } -> { 8 } -> { 4 } -> { 8 } -> NULL');
   });
+  it('6. Return an exception message when inserting before a non-existing node', () => {
+    expect(testingList.insertBefore(10, 8)).toBe('No change, method exception');
+  });
+  it('6. Return a message when inserting after a non-existing node', () => {
+    expect(testingList.insertAfter(10, 8)).toBe('No change, method exception');
+  });
 });
