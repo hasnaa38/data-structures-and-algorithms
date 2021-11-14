@@ -34,10 +34,10 @@ class Stack{
     this.top = this.top.next;
     temp.next = null;
     this.length = this.length - 1;
-    if(!this.length){
-      return 'empty stack';
-    }
-    return this.top.value;
+    // if(!this.length){
+    //   return 'empty stack';
+    // }
+    return temp.value;
   }
 
   // checking the stack's top value
