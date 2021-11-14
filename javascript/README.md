@@ -14,6 +14,7 @@
 | 07 - Linked List Kth | [linked-list-kth](./linked-list/linked-list-kth/README.md) |
 | ch 08 - Linked List Zip | [linked-list-zip](./linked-list/readme/ch08.md) |
 | ch 10 - Stack and Queue | [stack-and-queue](./stacks-and-queues/readme/ch10.md) |
+| ch 11 - Pseudo Queues | [pseudo-queues](./stacks-and-queues/readme/ch11.md) |
 
 ### Folder and Challenge Setup
 
