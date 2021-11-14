@@ -19,12 +19,12 @@ describe('Stacks and queues testing', () => {
     });
     // Can successfully pop off the stack
     it('Can successfully pop off the stack', () => {
-      expect(stackT.pop()).toBe(1);
+      expect(stackT.pop()).toBe(2);
       expect(stackT.length).toBe(1);
     });
     // Can successfully empty a stack after multiple pops
     it('Can successfully empty a stack after multiple pops', () => {
-      expect(stackT.pop()).toBe('empty stack');
+      expect(stackT.pop()).toBe(1);
       expect(stackT.isEmpty()).toBe(true);
     });
     // Calling pop or peek on empty stack raises exception

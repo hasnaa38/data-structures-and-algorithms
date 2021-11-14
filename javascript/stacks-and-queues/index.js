@@ -1,13 +1,15 @@
 'use strict';
 
-const Stack = require('./lib/Stack');
-const Queue = require('./lib/Queue');
+const PseudoQueue = require('./lib/pseudo-queue');
 
 function doWork(){
-  let stack = new Stack;
-  let queue = new Queue;
-  queue.enqueue(1);
-  queue.enqueue(2);
+  let newQueue = new PseudoQueue();
+  newQueue.enqueue(1);
+  newQueue.enqueue(2);
+  console.log(newQueue.dequeue());
+  console.log(newQueue.dequeue());
+  console.log(newQueue.dequeue());
+
 }
 
 module.exports = doWork;
