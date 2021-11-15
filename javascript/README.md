@@ -15,6 +15,8 @@
 | ch 08 - Linked List Zip | [linked-list-zip](./linked-list/readme/ch08.md) |
 | ch 10 - Stack and Queue | [stack-and-queue](./stacks-and-queues/readme/ch10.md) |
 | ch 11 - Pseudo Queues | [pseudo-queues](./stacks-and-queues/readme/ch11.md) |
+| ch 12 - Animal Shelter Queue | [animal-shelter-queue](./stacks-and-queues/readme/ch12.md) |
+
 
 ### Folder and Challenge Setup
 
