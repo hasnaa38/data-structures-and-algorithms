@@ -16,7 +16,7 @@
 | ch 10 - Stack and Queue | [stack-and-queue](./stacks-and-queues/readme/ch10.md) |
 | ch 11 - Pseudo Queues | [pseudo-queues](./stacks-and-queues/readme/ch11.md) |
 | ch 12 - Animal Shelter Queue | [animal-shelter-queue](./stacks-and-queues/readme/ch12.md) |
-
+| ch 13 - Brackets Validator Function| [brackets-validator-stack](./stacks-and-queues/readme/ch13.md) |
 
 ### Folder and Challenge Setup
 
