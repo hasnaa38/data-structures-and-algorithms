@@ -38,7 +38,8 @@ class Queue{
     if(!this.length){
       return 'empty queue';
     }
-    return this.front.value;
+    // return this.front.value;
+    return temp.value;
   }
 
   // checking the queue's top value
@@ -54,5 +55,18 @@ class Queue{
   isEmpty(){
     return this.length === 0;
   }
+
+  removeNode(index){
+    let currentNode = this.front;
+    for(let i=0; i<(index-2); i++){
+      currentNode = currentNode.next;
+    }
+    let temp = currentNode.next;
+    currentNode.next = temp.next;
+    temp.next = null;
+    this.length--;
+    return temp.value;
+  }
+
 }
 module.exports = Queue;
