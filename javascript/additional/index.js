@@ -1,6 +1,6 @@
 'use strict';
 
-const Queue = require('../stacks-and-queues/lib/Queue');
+const Queue = require('../additional/Queue');
 
 function DuckDuckGoose(array, k){
   if(!k) return 'k can\'t be 0';

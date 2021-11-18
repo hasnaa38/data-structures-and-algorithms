@@ -1,8 +1,8 @@
 'use strict';
 
-// let doWork = require('./stacks-and-queues/index');
+let doWork = require('./trees/index');
 
-// doWork();
+doWork();
 
-let DuckDuckGoose = require('./additional/index');
-console.log(DuckDuckGoose(['a', 'b', 'c', 'd', 'e'], 3));
+// let DuckDuckGoose = require('./additional/index');
+// console.log(DuckDuckGoose(['a', 'b', 'c', 'd', 'e'], 3));

@@ -38,8 +38,7 @@ class Queue{
     if(!this.length){
       return 'empty queue';
     }
-    // return this.front.value;
-    return temp.value;
+    return this.front.value;
   }
 
   // checking the queue's top value
