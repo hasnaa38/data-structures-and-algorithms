@@ -2,8 +2,9 @@
 
 let Node = require('./lib/Node');
 let BinaryTree = require('./lib/BinaryTree');
+let BST = require('./lib/BST');
 
-function doWork(){
+function doWork1(){
   let node1 = new Node(1);
   let node2 = new Node(2);
   let node3 = new Node(3);
@@ -21,6 +22,18 @@ function doWork(){
   let tree = new BinaryTree();
   tree.root = node1;
   console.log(tree.postOrder());
+}
+
+function doWork(){
+  let newTree = new BST();
+  newTree.insert(1);
+  newTree.insert(2);
+  newTree.insert(3);
+  newTree.insert(4);
+  newTree.insert(5);
+  newTree.insert(6);
+  newTree.insert(7);
+  console.log(newTree);
 }
 
 module.exports = doWork;
