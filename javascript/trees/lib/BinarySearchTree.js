@@ -1,56 +1,56 @@
 'use strict';
 
-// const BinaryTree = require('./BinaryTree');
+const Node = require('./Node');
+const BinaryTree = require('./BinaryTree');
 
-class BinarySearchTree {
+class BinarySearchTree extends BinaryTree{
   constructor(root=null){
-    this.root = root;
+    super(root);
+    // this.root = root;
   }
 
-  // Inserting a new node - stage 1 - to initiate a new tree
-  insert(newNode){
+  add(value){
+    let newNode = new Node(value);
     if(!this.root){
       this.root = newNode;
+      return;
     } else {
-      this.insertNode(this.root, newNode);
+      let _searchTree = (node) => {
+        if(value < node.value){
+          if(!node.left){
+            node.left = newNode; // if the node has no left (nothing less than it), add it here
+            return;
+          } else {
+            return _searchTree(node.left);
+          }
+        } else if(value > node.value){
+          if(!node.right){
+            node.right = newNode;
+            return;
+          } else {
+            return _searchTree(node.right);
+          }
+        } else {
+          return null;
+        }
+      };
+      return _searchTree(this.root);
     }
-    // return this.BinarySearchTree;
   }
-  // Inserting a new node - stage 2 - adding a node to an already existing tree in the correct location
-  insertNode(node, newNode){
-    if(node.value < newNode.value){
-      if(!node.left){
-        node.left = newNode;
-      } else {
-        this.insertNode(node.left, newNode);
-      }
-    } else {
-      if(!node.right){
-        node.right = newNode;
-      } else {
-        this.insertNode(node.right, newNode);
-      }
-    }
-  }
-
-  // Checking if the node exists
   contains(value){
-    if(!this.root){
-      return 'empty tree';
-    } else {
-      return this.containsValue(this.root, value);
-    }
-  }
-  containsValue(node, value){
-    if(value<node.value){
-      this.containsValue(node.left, value);
-    } else if(value>node.value) {
-      this.containsValue(node.right, value);
-    } else {
-      return true;
+    let node = this.root;
+    while(node){
+      if(value === node.value){
+        return true;
+      } else if(value < node.value){
+        node = node.left;
+      } else {
+        node = node.right;
+      }
     }
     return false;
   }
+
 }
 
 module.exports = BinarySearchTree;
