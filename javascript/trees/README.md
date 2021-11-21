@@ -1,10 +1,13 @@
 # Trees Readme
 
-### Table of Contents
+## Table of Contents
 
 | Topic | Readme File |
 |---|---|
-| ch 15 - Singly Linked Lists | [singly-linked-lists](./readme/ch05.md) |
-| ch 16 - Linked List Insertions | [linked-list-insertions](./readme/ch06.md) |
-| ch 17 - Linked List Kth | [linked-list-kth](./linked-list-kth/README.md) |
-| ch 18 - Linked List Zip | [linked-list-zip](./readme/ch08.md) |
+| ch 15 - Implementing BT and BST Basic Methods | [basic-methods](./readme/ch15.md) |
+| ch 16 - Implementing BT Max Method | [tree-max](./readme/ch16.md) |
+
+## Files
+
+* [Binary Trees](https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/trees/lib/BinaryTree.js)
+* [Binary Search Trees](https://github.com/hasnaa38/data-structures-and-algorithms/blob/main/javascript/trees/lib/BinarySearchTree.js)

@@ -6,10 +6,15 @@ const BinaryTree = require('./BinaryTree');
 class BinarySearchTree extends BinaryTree{
   constructor(root=null){
     super(root);
-    // this.root = root;
+    this.size = 0;
+  }
+
+  size(){
+    return this.size;
   }
 
   add(value){
+    this.size++;
     let newNode = new Node(value);
     if(!this.root){
       this.root = newNode;
@@ -37,6 +42,7 @@ class BinarySearchTree extends BinaryTree{
       return _searchTree(this.root);
     }
   }
+
   contains(value){
     let node = this.root;
     while(node){
@@ -51,6 +57,39 @@ class BinarySearchTree extends BinaryTree{
     return false;
   }
 
+  max(){
+    if(this.isEmpty()){
+      return null;
+    }
+    let maxValue;
+    let _recursiveFun = (node) => {
+      if(node.right){
+        _recursiveFun(node.right);
+      } else {
+        maxValue = node.value;
+      }
+    };
+    _recursiveFun(this.root);
+    return maxValue;
+  }
+
+  min(){
+    if(this.isEmpty()){
+      return null;
+    }
+    let currentNode = this.root;
+    while(currentNode.left){
+      currentNode = currentNode.left;
+    }
+    return currentNode.value;
+  }
+
+  isEmpty(){
+    if(!this.root){
+      return true;
+    }
+    return false;
+  }
 }
 
 module.exports = BinarySearchTree;
