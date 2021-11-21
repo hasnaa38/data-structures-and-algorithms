@@ -17,6 +17,8 @@
 | ch 11 - Pseudo Queues | [pseudo-queues](./stacks-and-queues/readme/ch11.md) |
 | ch 12 - Animal Shelter Queue | [animal-shelter-queue](./stacks-and-queues/readme/ch12.md) |
 | ch 13 - Brackets Validator Function| [brackets-validator-stack](./stacks-and-queues/readme/ch13.md) |
+| ch 15 - BT and BST | [trees](./trees/readme/ch15.md) |
+| ch 16 - BT Nax Method | [tree-max](./trees/readme/ch16.md) |
 
 ### Folder and Challenge Setup
 
