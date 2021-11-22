@@ -19,6 +19,7 @@
 | ch 13 - Brackets Validator Function| [brackets-validator-stack](./stacks-and-queues/readme/ch13.md) |
 | ch 15 - BT and BST | [trees](./trees/readme/ch15.md) |
 | ch 16 - BT Nax Method | [tree-max](./trees/readme/ch16.md) |
+| ch 16 -Breadth First Traversal | [tree-breadth-first](./trees/readme/ch17.md) |
 
 ### Folder and Challenge Setup
 

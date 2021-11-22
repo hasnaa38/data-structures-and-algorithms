@@ -1,6 +1,7 @@
 'use strict';
 
 const Node = require('./Node');
+const Queue = require('../../stacks-and-queues/lib/Queue');
 
 class BinaryTree{
   constructor(root=null){
@@ -55,7 +56,7 @@ class BinaryTree{
     return postOrderNodes;
   }
 
-  // find max
+  // find max and min
   max1(){
     if(!this.root){
       console.log('empty tree, no max');
@@ -90,6 +91,27 @@ class BinaryTree{
     return valuesArray.reduce((acc, value) => {
       return acc > value ? value : acc;
     }, 1000000);
+  }
+
+  // breadth first traversals (returns an array of the values, ordered appropriately level by level):
+  breadth(){
+    if(!this.root){
+      return null;
+    }
+    let result = [];
+    let queue = new Queue();
+    queue.enqueue(this.root);
+    while(!queue.isEmpty()){
+      let currentNode = queue.dequeue1();
+      result.push(currentNode.value);
+      if(currentNode.left){
+        queue.enqueue(currentNode.left);
+      }
+      if(currentNode.right){
+        queue.enqueue(currentNode.right);
+      }
+    }
+    return result;
   }
 }
 

@@ -41,19 +41,18 @@ function doWork(){
   // console.log(newTree.max());
   // console.log(newTree.min());
 
-  let node3 = new Node(38);
-  let node4 = new Node(83);
-  let node6 = new Node(0);
-  let node7 = new Node(24);
-  let node2 = new Node(2, node3, node4);
-  let node5 = new Node(5, node6, node7);
-  let rootNode = new Node(1, node2, node5);
-  let BT = new BinaryTree();
-  BT.root = rootNode;
-  let newNode = new Node(2);
-  node6.left = newNode;
-  console.log(BT.preOrder());
-
+  let newBT = new BinaryTree();
+  let node10 = new Node(5);
+  let node11 = new Node(11);
+  let node4 = new Node(2);
+  let node5 = new Node(6, node10, node11);
+  let node8 = new Node(4);
+  let node7 = new Node(9, node8, null);
+  let node2 = new Node(7, node4, node5);
+  let node3 = new Node(5, null, node7);
+  newBT.root = new Node(2, node2, node3);
+  // console.log(newBT.preOrder());
+  console.log(newBT.breadth());
 }
 
 module.exports = doWork;

@@ -41,6 +41,17 @@ class Queue{
     return this.front.value;
   }
 
+  dequeue1(){
+    if(this.isEmpty()){
+      return false;
+    }
+    let temp = this.front;
+    this.front = this.front.next;
+    temp.next = null;
+    this.length = this.length - 1;
+    return temp.value;
+  }
+
   // checking the queue's top value
   peek(){
     if(this.isEmpty()){
