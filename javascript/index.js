@@ -1,19 +1,47 @@
 'use strict';
 
-let _quickSort = require('./sorting/quickSort');
-let testingArr1 = [8,4,23,42,16,15];
-let testingArr2 = [20,18,12,8,5,-2];
-let testingArr3 = [5,12,7,5,5,7];
-let testingArr4 = [2,3,5,7,13,11];
-console.log('testing array: ', testingArr1);
-console.log('result: ', _quickSort(testingArr1, 0, testingArr1.length-1));
-console.log('=========');
-console.log('testing array: ', testingArr2);
-console.log('result: ', _quickSort(testingArr2, 0, testingArr2.length-1));
-console.log('=========');
-console.log('testing array: ', testingArr3);
-console.log('result: ', _quickSort(testingArr3, 0, testingArr3.length-1));
-console.log('=========');
-console.log('testing array: ', testingArr4);
-console.log('result: ', _quickSort(testingArr4, 0, testingArr4.length-1));
+let HashTable = require('./hashtables/hashtable');
+let myHashTable = new HashTable(20);
 
+// console.log('hasnaa ', myHashTable.hash('hasnaa'));
+// console.log('aseel ', myHashTable.hash('aseel'));
+// console.log('samar: ', myHashTable.hash('samar'));
+// console.log('sarah: ', myHashTable.hash('sarah'));
+
+/*
+hasnaa  0
+aseel  0
+samar:  0
+sarah:  1
+*/
+console.log('HERE ->>>>', myHashTable.hash('test'));
+console.log('HERE ->>>>', myHashTable.hash('hello'));
+console.log('HERE ->>>>', myHashTable.hash('tetsing'));
+console.log('HERE ->>>>', myHashTable.hash('life'));
+console.log('HERE ->>>>', myHashTable.hash('trying'));
+console.log('HERE ->>>>', myHashTable.hash('code'));
+console.log('HERE ->>>>', myHashTable.hash('edoc'));
+// myHashTable.add('hasnaa', 'lucky');
+// myHashTable.add('aseel', 'lucky');
+// myHashTable.add('samar', 'lucky');
+// myHashTable.add('sarah', 'lucky');
+// console.log(myHashTable.get('hasnaa'));
+// console.log(myHashTable.get('sarah'));
+// console.log(myHashTable.get('samar'));
+// console.log(myHashTable.get('aseel'));
+// console.log(myHashTable.contains('aseel'));
+// console.log(myHashTable.contains('sarah'));
+// console.log(myHashTable.contains('samar'));
+// console.log(myHashTable.contains('hasnaa'));
+// console.log(myHashTable.contains('fatima'));
+// console.log(myHashTable);
+// console.log(myHashTable.hashTable[0]);
+
+
+// let key = 'hasnaa';
+// let charSum = key.split('').reduce((acc, current) => acc+current.charCodeAt(0), 0);
+// console.log('charSum ', charSum);
+// let multipliedByPrime = charSum * 599;
+// console.log('multipliedByPrime ', multipliedByPrime);
+// let final = multipliedByPrime / 20;
+// console.log('final ',final );
