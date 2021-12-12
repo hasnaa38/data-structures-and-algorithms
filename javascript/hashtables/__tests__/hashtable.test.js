@@ -23,9 +23,8 @@ describe('testing the basic hashtable implementation', ()=>{
     expect(testingHashTable.contains('code')).toBe(true);
     expect(testingHashTable.contains('edoc')).toBe(true);
   });
-  test('can retrieve a value from a bucket within the hashtable that has a collision', () => {});
-  testingHashTable.add('code','code value');
-  testingHashTable.add('edoc','edoc value');
-  expect(testingHashTable.get('code')).toStrictEqual({'code':'code value'});
-  expect(testingHashTable.get('edoc')).toStrictEqual({'edoc':'edoc value'});
+  test('can retrieve a value from a bucket within the hashtable that has a collision', () => {
+    expect(testingHashTable.get('code')).toStrictEqual({'code':'code value'});
+    expect(testingHashTable.get('edoc')).toStrictEqual({'edoc':'edoc value'});
+  });
 });
