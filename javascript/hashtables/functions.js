@@ -31,12 +31,3 @@ function leftJoin(hashtable1, hashtable2){
   return result;
 }
 module.exports = {repeatedWord, leftJoin};
-
-// its an array of objects (linked lists) [ ] 
-// the linked list has nodes in it
-// linked list has a length, from here we will make sure that our table bucket has no collisions
-
-// in the first array (table), reach the first element, and return it as [ key, value ]
-// then go to the second table and check if it `contains(key)` -> if it does: [ key, value, value of table 2]
-// [[0], [1], [2], [3]]
-// return this array
