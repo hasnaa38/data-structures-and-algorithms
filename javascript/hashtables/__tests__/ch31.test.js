@@ -1,6 +1,6 @@
 'use strict';
 
-let repeatedWord = require('../functions');
+let {repeatedWord} = require('../functions');
 
 describe('testing the repeated word function', ()=>{
   test('returns the first repeated word in a string input', () => {
