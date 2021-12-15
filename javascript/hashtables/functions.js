@@ -30,4 +30,27 @@ function leftJoin(hashtable1, hashtable2){
   }
   return result;
 }
-module.exports = {repeatedWord, leftJoin};
+
+function mostCommon(string){
+  let stringArray = string.split(' ');
+  let myHashTable = new HashTable(stringArray.length);
+  let mostRepeated = null;
+  stringArray.map(element => {
+    let word = element.toLowerCase();
+    let max = 0;
+    let tempValue;
+    if(myHashTable.contains(word)){
+      tempValue = myHashTable.get(word)[word]+1;
+      if(tempValue > max){
+        max = tempValue;
+        mostRepeated = word;
+      }
+      myHashTable.add(word, tempValue);
+    } else {
+      myHashTable.add(word, 1);
+    }
+  });
+  return mostRepeated;
+}
+
+module.exports = {repeatedWord, leftJoin, mostCommon};
