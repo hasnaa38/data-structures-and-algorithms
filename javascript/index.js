@@ -1,8 +1,11 @@
 'use strict';
 
-let HashTable = require('./hashtables/hashtable');
-let {mostCommon} = require('./hashtables/functions');
+let { Vertex, Edge, Graph } = require('./graphs/graphs');
 
-console.log(mostCommon('In a galaxy far far away away away'));
-console.log(mostCommon('No. Try not. Do or do not. There is no try.'));
-console.log(mostCommon('Taco cat ate a taco'));
+let myGraph = new Graph();
+
+let vertex3 = new Vertex(3);
+let vertex4 = new Vertex(4);
+myGraph.addVertex(vertex3); 
+myGraph.addVertex(vertex4);
+console.log(myGraph.getAll()[0].Vertex);
